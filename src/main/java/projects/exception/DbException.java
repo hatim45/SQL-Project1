@@ -1,19 +1,33 @@
 package projects.exception;
 
-public class DbException extends RuntimeException{
-	
-	public DbException(String message) {
-		super(message);
-		// TODO Auto-generated constructor stub
-	}
+@SuppressWarnings("serial")
+public class DbException extends RuntimeException {
 
-	public DbException(Throwable cause) {
-		super(cause);
-		// TODO Auto-generated constructor stub
-	}
+  /**
+   * Creates an exception with a message.
+   * 
+   * @param message The message.
+   */
+  public DbException(String message) {
+    super(message);
+  }
 
-	public DbException(String message, Throwable cause) {
-		super(message, cause);
-		// TODO Auto-generated constructor stub
-	}
+  /**
+   * Creates an exception with a cause.
+   * 
+   * @param cause The causal exception.
+   */
+  public DbException(Throwable cause) {
+    super(cause);
+  }
+
+  /**
+   * Create an exception with a message and a cause.
+   * 
+   * @param message The message.
+   * @param cause The causal exception.
+   */
+  public DbException(String message, Throwable cause) {
+    super(message, cause);
+  }
 }
